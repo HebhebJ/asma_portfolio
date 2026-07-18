@@ -16,3 +16,4 @@ When implementing from a selected generated mock, treat that image as the source
 - Use `public/assets/asma-portrait.jpeg` as Asma's portrait; never use the CV image as her profile photo.
 - Maintain a dedicated all-projects page where visitors can browse projects one by one and open a detailed project gallery modal.
 - Mobile quality at 390px is a required acceptance criterion.
+- Use `public/assets/asma-wordmark.png` for the hero name lockup: uppercase black “ASMA” above the rust-orange handwritten “Kamel Thabti”. Keep the spelling exact and do not recreate the hero name as ordinary HTML text.

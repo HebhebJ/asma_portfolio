@@ -225,26 +225,11 @@ video {
   z-index: 2;
 }
 
-.hero__name {
-  margin: 0 0 4px;
-  font-family: var(--display);
-  line-height: 0.82;
-}
-
-.hero__name span {
+.hero__wordmark {
   display: block;
-  font-size: clamp(64px, 7vw, 118px);
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-
-.hero__name em {
-  display: block;
-  color: var(--rust);
-  font-size: clamp(36px, 3.5vw, 64px);
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  width: min(100%, 540px);
+  height: auto;
+  margin: 0 0 10px -5px;
 }
 
 .hero__role {
@@ -1261,12 +1246,9 @@ video {
     gap: 48px;
   }
 
-  .hero__name span {
-    font-size: clamp(66px, 17vw, 112px);
-  }
-
-  .hero__name em {
-    font-size: clamp(40px, 10vw, 62px);
+  .hero__wordmark {
+    width: min(100%, 520px);
+    margin-left: 0;
   }
 
   .hero__role {

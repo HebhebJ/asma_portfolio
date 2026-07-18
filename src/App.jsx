@@ -267,10 +267,11 @@ export function App() {
           <main>
             <section className="hero" aria-labelledby="hero-title">
               <div className="hero__intro">
-                <p className="hero__name">
-                  <span>Asma</span>
-                  <em>Kamel Thabti</em>
-                </p>
+                <img
+                  className="hero__wordmark"
+                  src="/assets/asma-wordmark.png"
+                  alt="Asma Kamel Thabti"
+                />
                 <p className="hero__role">Designer d’intérieur diplômée</p>
                 <h1 id="hero-title">De la première ligne<br />à l’atmosphère finale<span>.</span></h1>
                 <p className="hero__summary">

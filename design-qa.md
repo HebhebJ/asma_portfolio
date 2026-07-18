@@ -75,3 +75,61 @@
 - P3: Asma can later provide exact project dates, locations, areas, and client briefs to enrich each modal's written case study without changing the visual system.
 
 final result: passed
+
+---
+
+## Hero wordmark follow-up — 2026-07-19
+
+**Source visual truth**
+
+- User-supplied two-line wordmark reference in the conversation.
+- Final generated source asset: `public/assets/asma-wordmark.png`.
+- Exact required text: `ASMA` and `Kamel Thabti`.
+
+**Implementation evidence**
+
+- Desktop hero: `output/playwright/wordmark-hero-desktop.png`.
+- Mobile hero: `output/playwright/wordmark-hero-mobile.png`.
+- Combined source/implementation comparison: `output/playwright/wordmark-comparison.png`.
+
+**Viewport and state**
+
+- Desktop: `1440 x 1000`, homepage default state.
+- Mobile: `390 x 844`, homepage default state.
+
+**Full-view and focused comparison evidence**
+
+- The combined comparison shows the generated wordmark used directly in the hero rather than recreated with HTML text.
+- The black uppercase `ASMA` and rust-orange handwritten `Kamel Thabti` preserve the reference hierarchy and remain legible against the warm paper background.
+- The asset renders at `404 x 145` on desktop and `346 x 124` on mobile without distortion.
+- The transparent crop is clean at the visible scale, with no colored background box or obvious chroma fringe.
+- Focused asset comparison was required because typography and transparency are the primary fidelity surfaces for this change.
+
+**Required fidelity surfaces**
+
+- Fonts and typography: the raster asset retains the generated lettering exactly; no browser font substitution occurs.
+- Spacing and layout rhythm: the lockup fits the existing hero column without changing the headline, CTA, or image composition.
+- Colors and visual tokens: near-black and rust-orange align with the existing portfolio palette.
+- Image quality and asset fidelity: the 1434 x 515 transparent PNG stays sharp at both tested sizes and uses the exact `Thabti` spelling.
+- Copy and content: the accessible image alternative remains `Asma Kamel Thabti`.
+
+**Primary interactions and console**
+
+- Homepage navigation and CTA remain present after the asset replacement.
+- Desktop and mobile browser checks: 0 errors, 0 warnings.
+- Mobile horizontal overflow: `0px`.
+
+**Comparison history**
+
+- First pass: no actionable P0/P1/P2 mismatch found.
+- No corrective visual iteration was required.
+
+**Findings**
+
+- No actionable P0, P1, or P2 findings.
+
+**Follow-up polish**
+
+- P3: a future vector master could reduce file size further if Asma commissions a finalized brand signature.
+
+final result: passed
