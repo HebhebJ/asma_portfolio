@@ -150,14 +150,14 @@ video {
   letter-spacing: 0.04em;
 }
 
-.nav a:first-child {
+.nav a[aria-current="page"] {
   color: var(--blue);
 }
 
-.nav a:first-child::after {
+.nav a[aria-current="page"]::after {
   content: "";
   height: 2px;
-  width: 52px;
+  width: 100%;
   background: var(--blue);
   position: absolute;
   left: 0;
@@ -1068,9 +1068,12 @@ video {
 
 .lightbox__stage > img,
 .lightbox__stage > video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: center;
 }
 
 .lightbox__video-label {
@@ -1247,7 +1250,7 @@ video {
     font-size: 34px;
   }
 
-  .nav a:first-child::after {
+  .nav a[aria-current="page"]::after {
     display: none;
   }
 

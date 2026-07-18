@@ -251,6 +251,7 @@ export function App() {
           <header className="topbar" id="top">
             <a className="mobile-mark" href="#top" aria-label="Retour en haut">AKT</a>
             <nav className={menuOpen ? "nav nav--open" : "nav"} aria-label="Navigation principale">
+              <a href="/" aria-current="page" onClick={closeMenu}>Accueil</a>
               <a href="/projects.html" onClick={closeMenu}>Projets</a>
               <a href="#studio" onClick={closeMenu}>Profil</a>
               <a href="#contact" onClick={closeMenu}>Contact</a>

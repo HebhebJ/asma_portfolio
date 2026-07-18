@@ -1,25 +1,36 @@
 import { useState } from "react";
-import { ArrowLeft, ArrowUpRight, Images } from "@phosphor-icons/react";
+import { ArrowUpRight, Images, List, X } from "@phosphor-icons/react";
 import { Lightbox, projects } from "./App.jsx";
 
 export function ProjectsPage() {
   const [activeProject, setActiveProject] = useState(null);
   const [previewProject, setPreviewProject] = useState(projects[0]);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <>
       <div className="site-shell projects-page">
         <aside className="rail" aria-label="Identité du portfolio">
-          <a className="rail__mark" href="/index.html" aria-label="Retour à l’accueil">AKT</a>
+          <a className="rail__mark" href="/" aria-label="Retour à l’accueil">AKT</a>
           <span className="rail__location">GABÈS — TUNISIE</span>
           <span className="rail__coordinates">34.097° N<br />10.098° E</span>
         </aside>
 
         <div className="page">
           <header className="topbar projects-page__topbar">
-            <a className="mobile-mark" href="/index.html" aria-label="Retour à l’accueil">AKT</a>
-            <a className="back-link" href="/index.html"><ArrowLeft /> Retour à l’accueil</a>
+            <a className="mobile-mark" href="/" aria-label="Retour à l’accueil">AKT</a>
+            <nav className={menuOpen ? "nav nav--open" : "nav"} aria-label="Navigation principale">
+              <a href="/" onClick={closeMenu}>Accueil</a>
+              <a href="/projects.html" aria-current="page" onClick={closeMenu}>Projets</a>
+              <a href="/#studio" onClick={closeMenu}>Profil</a>
+              <a href="/#contact" onClick={closeMenu}>Contact</a>
+            </nav>
             <span className="projects-page__count">{String(projects.length).padStart(2, "0")} projets / 2026</span>
+            <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Ouvrir ou fermer le menu">
+              {menuOpen ? <X /> : <List />}
+            </button>
           </header>
 
           <main>
