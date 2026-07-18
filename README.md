@@ -50,12 +50,18 @@ Le serveur local est ensuite accessible à l’adresse indiquée par Vite.
 # Développement
 npm run dev
 
-# Build de production
+# Build pour OpenAI Sites
 npm run build
+
+# Build statique pour Vercel
+npm run build:vercel
 
 # Prévisualisation du build
 npm run preview
 ```
+
+Le fichier `vercel.json` sélectionne automatiquement le build statique et publie
+le dossier `dist`.
 
 ## Structure principale
 
