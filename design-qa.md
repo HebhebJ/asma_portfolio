@@ -78,6 +78,46 @@ final result: passed
 
 ---
 
+## Curated project expansion — 2026-07-19
+
+**Implementation evidence**
+
+- Expanded desktop project index: `output/playwright/projects-expanded-desktop.png`.
+- Expanded mobile project index: `output/playwright/projects-expanded-mobile.png`.
+- Restaurant modal: `output/playwright/restaurant-modal-desktop.png`.
+- RCEH desktop modal: `output/playwright/rceh-modal-desktop.png`.
+- RCEH mobile modal: `output/playwright/rceh-modal-mobile.png`.
+- Curated source asset review: `output/playwright/curated-new-assets.jpg`.
+
+**Scope and selection**
+
+- Added two new case studies: `Aménagement Restaurant` and `Résidence Collective RCEH`.
+- Added twenty optimized media assets while keeping each project gallery to five to seven items.
+- Nine selected one-page PDFs were rendered as web images at a 1500px maximum edge.
+- Added finished alternate renders to Villa Méditerranéenne, Cuisine Casa Verde and Cuisine Monochrome.
+
+**Verification**
+
+- Desktop project index shows all eight projects with the preview rail and contact panel intact.
+- Portrait plan sheets use `object-fit: contain`; the restaurant plan paints at `506 x 716` inside a `1372 x 716` stage without cropping.
+- Desktop and 390px mobile RCEH galleries show the full technical sheets, navigation controls and thumbnails.
+- Homepage category filtering returns both commercial projects.
+- All 45 referenced project assets exist.
+- Mobile horizontal overflow: `0px`.
+- Browser console: 0 errors, 0 warnings.
+
+**Findings**
+
+- No actionable P0, P1 or P2 findings.
+
+**Follow-up polish**
+
+- P3: exact project locations, surface areas and dates can be added later when Asma confirms them.
+
+final result: passed
+
+---
+
 ## Hero wordmark follow-up — 2026-07-19
 
 **Source visual truth**

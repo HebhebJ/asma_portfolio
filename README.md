@@ -6,6 +6,8 @@ Le site présente ses projets résidentiels et commerciaux à travers des rendus
 
 ## Démonstration
 
+- [Voir le portfolio sur Vercel](https://asma-portfolio-neon.vercel.app)
+- [Voir les huit projets](https://asma-portfolio-neon.vercel.app/projects)
 - [Voir le portfolio en ligne](https://asma-kamel-thabti-portfolio.iheb-jlassi.chatgpt.site)
 - [Voir tous les projets](https://asma-kamel-thabti-portfolio.iheb-jlassi.chatgpt.site/projects.html)
 
@@ -16,8 +18,9 @@ Le site présente ses projets résidentiels et commerciaux à travers des rendus
 - Interface entièrement en français
 - Design architectural responsive inspiré d’une planche technique
 - Page d’accueil avec projets sélectionnés et filtres par catégorie
-- Page dédiée regroupant tous les projets
+- Page dédiée regroupant huit études résidentielles, commerciales et techniques
 - Galeries modales avec images, plans, palettes et vidéos
+- Sélection de planches techniques extraites des dossiers PDF
 - Navigation clavier dans les galeries
 - Mise en page optimisée pour ordinateur, tablette et mobile
 - Liens de contact directs par e-mail et téléphone

@@ -26,7 +26,9 @@ export const projects = [
       "Un refuge extérieur paisible, façonné par la pierre chaleureuse, l’ombre du bois et une palette végétale méditerranéenne.",
     media: [
       { type: "image", src: "/assets/hero-villa.png", alt: "Piscine de villa et pergola en bois au coucher du soleil" },
+      { type: "image", src: "/assets/villa-pool-alternate.jpg", alt: "Vue panoramique de la piscine et du foyer extérieur" },
       { type: "image", src: "/assets/villa-angle.png", alt: "Vue alternative de l’extérieur de la villa" },
+      { type: "image", src: "/assets/villa-lounge.jpg", alt: "Salon extérieur sous la pergola textile" },
       { type: "image", src: "/assets/villa-twilight.png", alt: "Extérieur de la villa au crépuscule" },
       { type: "image", src: "/assets/villa-detail.png", alt: "Vue détaillée de l’aménagement extérieur" },
       { type: "video", src: "/assets/villa-film.mp4", alt: "Visite cinématique de l’extérieur de la villa" },
@@ -45,6 +47,8 @@ export const projects = [
       "Une cuisine contemporaine développée depuis la perspective dessinée à la main jusqu’à l’étude des matériaux et aux détails techniques.",
     media: [
       { type: "image", src: "/assets/casa-verde.jpg", alt: "Rendu de la cuisine Casa Verde" },
+      { type: "image", src: "/assets/casa-sink-detail.jpg", alt: "Vue détaillée du linéaire évier de la cuisine Casa Verde" },
+      { type: "image", src: "/assets/casa-storage-detail.jpg", alt: "Composition des rangements toute hauteur de Casa Verde" },
       { type: "image", src: "/assets/casa-sketch.png", alt: "Perspective de cuisine dessinée à la main" },
       { type: "image", src: "/assets/casa-palette.png", alt: "Palette de matériaux de Casa Verde" },
       { type: "image", src: "/assets/casa-technical.png", alt: "Planche technique de la cuisine Casa Verde" },
@@ -65,6 +69,8 @@ export const projects = [
     media: [
       { type: "image", src: "/assets/kitchen-main.png", alt: "Cuisine contemporaine en lumière de jour" },
       { type: "image", src: "/assets/kitchen-night.png", alt: "Étude d’éclairage nocturne de la cuisine contemporaine" },
+      { type: "image", src: "/assets/kitchen-night-side.jpg", alt: "Vue nocturne des rangements et de l’éclairage intégré" },
+      { type: "image", src: "/assets/kitchen-night-wide.jpg", alt: "Vue nocturne du plan de travail et de la zone cuisson" },
       { type: "image", src: "/assets/kitchen-side.png", alt: "Vue latérale de la cuisine" },
       { type: "image", src: "/assets/kitchen-wide.png", alt: "Vue large de la cuisine" },
       { type: "video", src: "/assets/kitchen-film.mp4", alt: "Animation de la cuisine" },
@@ -103,7 +109,8 @@ export const projects = [
       { type: "image", src: "/assets/residence-plan.png", alt: "Plan meublé du rez-de-chaussée de la résidence" },
       { type: "image", src: "/assets/residence-zoning.png", alt: "Étude du zonage fonctionnel de la résidence" },
       { type: "image", src: "/assets/residence-plan-level.png", alt: "Plan de l’étage de la résidence" },
-      { type: "image", src: "/assets/rceh-plan.png", alt: "Étude d’aménagement d’un ensemble résidentiel" },
+      { type: "image", src: "/assets/residence-structure.png", alt: "Plan de structure et trame constructive de la résidence" },
+      { type: "image", src: "/assets/residence-sections.png", alt: "Coupes techniques et développement de l’escalier" },
     ],
   },
   {
@@ -118,8 +125,49 @@ export const projects = [
     description:
       "Une proposition de loisirs coordonnant terrains de padel, paysage, accueil et circulation sur une parcelle urbaine irrégulière.",
     media: [
+      { type: "image", src: "/assets/padel-site-context.png", alt: "Analyse du contexte urbain et végétal du centre de padel" },
+      { type: "image", src: "/assets/padel-zoning.png", alt: "Zonage fonctionnel du centre de padel" },
+      { type: "image", src: "/assets/padel-concept.png", alt: "Schémas conceptuels de la forme et des circulations" },
       { type: "image", src: "/assets/padel-site.png", alt: "Plan de site du centre de padel" },
       { type: "image", src: "/assets/padel-plan.png", alt: "Plan développé du centre de padel" },
+    ],
+  },
+  {
+    id: "restaurant",
+    number: "07",
+    title: "Aménagement Restaurant",
+    label: "Commercial · Plans et implantation",
+    year: "2026",
+    category: "Commercial",
+    cover: "/assets/restaurant-plan-furnished.jpg",
+    position: "center",
+    description:
+      "Une étude d’aménagement commercial développant la capacité d’accueil, les circulations, les zones de service et plusieurs niveaux de détail du plan.",
+    media: [
+      { type: "image", src: "/assets/restaurant-plan-furnished.jpg", alt: "Plan meublé et implantation générale du restaurant" },
+      { type: "image", src: "/assets/restaurant-plan-zoning.jpg", alt: "Plan de zonage et limites fonctionnelles du restaurant" },
+      { type: "image", src: "/assets/restaurant-plan-detailed.jpg", alt: "Plan détaillé des espaces de restauration et de service" },
+      { type: "image", src: "/assets/restaurant-plan-structure.jpg", alt: "Trame structurelle et distribution du restaurant" },
+      { type: "image", src: "/assets/restaurant-plan-layout.jpg", alt: "Variante d’implantation du mobilier et des assises" },
+    ],
+  },
+  {
+    id: "rceh",
+    number: "08",
+    title: "Résidence Collective RCEH",
+    label: "Architecture · Analyse et distribution",
+    year: "2026",
+    category: "Études",
+    cover: "/assets/rceh-plan.png",
+    position: "center",
+    description:
+      "Une étude résidentielle collective articulant analyse du site, orientation solaire, distribution des logements et lecture technique des plans.",
+    media: [
+      { type: "image", src: "/assets/rceh-site-analysis.png", alt: "Analyse des limites, accès et voisinage du terrain RCEH" },
+      { type: "image", src: "/assets/rceh-sun-analysis.png", alt: "Étude de l’ensoleillement du terrain RCEH" },
+      { type: "image", src: "/assets/rceh-ground-plan.png", alt: "Plan développé des logements de la résidence collective" },
+      { type: "image", src: "/assets/rceh-plan.png", alt: "Plan meublé de la résidence collective" },
+      { type: "image", src: "/assets/rceh-plan-legend.png", alt: "Plan architectural accompagné de sa légende technique" },
     ],
   },
 ];
@@ -394,7 +442,7 @@ export function App() {
             </section>
 
             <section className="contact" id="contact">
-              <span className="contact__index">07 / Contact</span>
+              <span className="contact__index">09 / Contact</span>
               <div className="contact__headline" data-reveal>
                 <p>Vous avez un espace en tête ?</p>
                 <h2>Transformons la première ligne<br />en atmosphère<span>.</span></h2>
